@@ -8,7 +8,7 @@ aplicação completa entregue na Aula 20. O enunciado completo do case está em
 
 ## Identificação
 
-- Nome completo:
-- RA:
-- Turma: (quarta ou quinta)
-- O que espero aprender:
+- Nome completo: Alessandro Matias Azevedo
+- RA: 925108912
+- Turma: quinta
+- O que espero aprender: desenvolvimento web
