@@ -29,3 +29,5 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+.erro-campo  { color: #E4572E; font-size: 0.9rem; display: block; }
+.erro-resumo { color: #E4572E; border-left: 4px solid #E4572E; padding-left: 12px; }
