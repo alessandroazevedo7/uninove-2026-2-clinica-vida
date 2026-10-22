@@ -15,6 +15,11 @@ public class HomeController : Controller
     {
         return View();
     }
+    // Controllers/HomeController.cs
+   public IActionResult Sobre()
+    {
+    return View();       // Views/Home/Sobre.cshtml
+}
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
