@@ -12,3 +12,7 @@ aplicação completa entregue na Aula 20. O enunciado completo do case está em
 - RA: 925108912
 - Turma: quinta
 - O que espero aprender: desenvolvimento web
+## Ambiente .NET
+
+- SDK: 10.0.x (obtido com `dotnet --list-sdks`)
+- Executar: `cd ClinicaVida.Web` e depois `dotnet watch run`
