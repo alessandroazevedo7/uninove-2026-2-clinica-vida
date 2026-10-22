@@ -1,11 +1,22 @@
+@model IEnumerable<Especialidade>
+
 @{
-    ViewData["Title"] = "Especialidades";
+    ViewData["Title"] = "Especialidades da Clínica Vida+";
+    var contagem = (Dictionary<int, int>)ViewBag.MedicosPorEspecialidade;
 }
 
-<h1>@ViewData["Titulo"]</h1>
+<h1>@ViewData["Title"]</h1>
 
-<ul>
-    <li><a href="/Especialidades/Details/1?nome=Cardiologia">Cardiologia</a></li>
-    <li><a href="/Especialidades/Details/2?nome=Pediatria">Pediatria</a></li>
-    <li><a href="/Especialidades/Details/3?nome=Dermatologia">Dermatologia</a></li>
+<ul class="list-group">
+@foreach (var e in Model)
+{
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <a href="/Medicos?especialidadeId=@e.Id" class="text-decoration-none fw-bold">
+            @e.Nome
+        </a>
+        <span class="badge bg-primary rounded-pill">
+            @contagem[e.Id] médico(s)
+        </span>
+    </li>
+}
 </ul>
